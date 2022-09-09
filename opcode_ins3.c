@@ -79,7 +79,7 @@ void _mod(stack_t **doubly, unsigned int cline)
 	}
 	if ((*doubly)->n == 0)
 	{
-		dprintf(2, "L%u: division by zero\n", cline);									
+		dprintf(2, "L%u: division by zero\n", cline);
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
@@ -120,7 +120,7 @@ void _pstr(stack_t **doubly, unsigned int cline)
 {
 	stack_t *aux;
 	(void)cline;
-	
+
 	aux = *doubly;
 	while (aux && aux->n > 0 && aux->n < 128)
 	{

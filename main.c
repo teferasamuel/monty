@@ -1,8 +1,6 @@
 #include "monty.h"
-#include <stdio.h>
 
 global_t vglo;
-
 /**
  * free_vglo - frees the global variables
  * Return: no return
@@ -67,9 +65,9 @@ int main(int argc, char *argv[])
 	size_t size = 256;
 	ssize_t nlines = 0;
 	char *lines[2] = {NULL, NULL};
+
 	fd = check_input(argc, argv);
 	start_vglo(fd);
-
 	nlines = getline(&vglo.buffer, &size, fd);
 	while (nlines != -1)
 	{

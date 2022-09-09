@@ -73,7 +73,7 @@ void _pint(stack_t **doubly, unsigned int cline)
 }
 
 /**
- *pop - removes the top element of the stack
+ *_pop - removes the top element of the stack
  *@doubly: head of the linked list
  *@cline: line number
  *Return: no return
